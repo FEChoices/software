@@ -133,3 +133,159 @@ body {
   background: var(--cor-9);
   color: var(--cor-w);
 }
+
+/*************************************** ASIDE ***************************************/
+
+.aside {
+  display: block;
+  background: var(--cor-9);
+  width: fit-content;
+  height: calc(100vh - 100px);
+  padding: 20px 40px;
+  border-right: 4px solid var(--cor-separador);
+  position: fixed;
+  top: 100px;
+  z-index: 2;
+}
+
+.body {
+  height: 300vh;
+}
+
+.link-obter {
+  background: var(--cor-p3);
+  color: var(--cor-w);
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 4px;
+  display: flex;
+  align-items: end;
+  transition: .3s;
+}
+
+.link-obter::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  background: url(../imgs/icons/icon-pontos-b.svg);
+}
+
+.link-obter:hover {
+  background: var(--cor-p4);
+}
+
+.aside nav:nth-child(2) {
+  margin-top: 32px;
+}
+
+.aside nav:nth-child(2)::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--cor-separador);
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.aside nav:nth-child(2) p {
+  width: 100%;
+  color: var(--cor-2);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aside nav:nth-child(2) p:after {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 6px;
+  background: url(../imgs/icons/seta-baixo.svg) no-repeat center center;
+  transition: .3s;
+}
+
+.aside nav:nth-child(2) p:hover::after {
+  transform: rotate(180deg);
+}
+
+.aside nav:nth-child(2) ul li:not(li:last-child) {
+  margin-bottom: 12px;
+}
+
+.aside nav:nth-child(2) ul li a {
+  color: var(--cor-2);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.aside nav:nth-child(2) ul li a::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: no-repeat center center;
+}
+
+.aside nav:nth-child(2) ul li:nth-child(1) a::before {
+  background-image: url(../imgs/icons/icon-palpites.svg) ;
+}
+
+.aside nav:nth-child(2) ul li:nth-child(2) a::before {
+  background-image: url(../imgs/icons/icon-roleta.svg) ;
+}
+
+.aside nav:nth-child(2) ul li:nth-child(3) a::before {
+  background-image: url(../imgs/icons/icon-fantasy.svg) ;
+}
+
+.aside nav:nth-child(2) ul li:nth-child(4) a::before {
+  background-image: url(../imgs/icons/icon-aovivo.svg) ;
+}
+
+.aside nav:nth-child(2) ul li:nth-child(5) a::before {
+  background-image: url(../imgs/icons/icon-circuitos.svg) ;
+}
+
+.aside nav:nth-child(3) ul li:not(li:last-child) {
+  margin-bottom: 12px;
+}
+
+.aside nav:nth-child(3) ul li a {
+  color: var(--cor-2);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.aside nav:nth-child(3) ul li a::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: no-repeat center center;
+}
+
+.aside nav:nth-child(3) ul li:nth-child(1) a::before {
+  background-image: url(../imgs/icons/icon-sobre.svg) ;
+}
+
+.aside nav:nth-child(3) ul li:nth-child(2) a::before {
+  background-image: url(../imgs/icons/icon-afiliados.svg) ;
+}
+
+.aside nav:nth-child(3) ul li:nth-child(3) a::before {
+  background-image: url(../imgs/icons/icon-premios.svg) ;
+}
+
+.aside nav:nth-child(3) ul li:nth-child(4) a::before {
+  background-image: url(../imgs/icons/icon-suporte.svg) ;
+}
+
+.aside nav:nth-child(3) ul li:nth-child(5) a::before {
+  background-image: url(../imgs/icons/icon-blog.svg) ;
+}
