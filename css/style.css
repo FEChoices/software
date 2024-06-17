@@ -717,7 +717,7 @@ body {
   padding: 12px 0px;
   font: 600 1rem / 1.66 var(--fonte-primaria);
   text-transform: uppercase;
-  color: var(--branco);
+  color: var(--cor-8);
   background: var(--cor-3);
   border: 1px solid var(--cor-3);
   border-radius: 4px;
