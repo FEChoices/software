@@ -28,19 +28,35 @@ function validarCadastro(){
   }
 }
 
-
-// REVISAR ESSE CÓDIGO
-const usuarioLg = document.getElementById('nome-lg').value;
-const senhaLg = document.getElementById('senha-lg').value;
-const dica = document.getElementById('dica');
-
 function validarLogin(){
-  if(usuarioLg === usuarioCd && senhaLg === senhaCd){
+  const usuario = document.getElementById('usuario').value;
+  const senha = document.getElementById('senha').value;
+  const dica = document.getElementById('dica');
+
+  if(usuario === 'caio' && senha == 123){
     alert("Login com sucesso!");
-    dica.innerText = "" 
+    dica.innerText = "";   
   }
   else{
     alert("Login errado!");
-    dica.innerText = "Dica: números"
+    dica.innerText = "Dica: números";
   }
+}
+
+/*************************************** ASIDE POPULARES ***************************************/
+
+const populares = document.querySelector('.aside nav p button')
+
+function ativarPopulares(event) {
+  const btn = event.currentTarget;
+  const controls = btn.getAttribute('aria-controls');
+  const nav = document.getElementById(controls);
+
+  nav.classList.toggle("ativa")
+  const ativa = nav.classList.contains("ativa");
+  btn.setAttribute("aria-expanded", ativa);
+}
+
+function eventoPopulares() {
+  populares.addEventListener('click', ativarPopulares)
 }
