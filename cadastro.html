@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FE Choices | Home</title>
+  <title>FE Choices | Cadastro</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -54,85 +54,24 @@
   </aside>
   <!------------------------------------ MAIN ------------------------------------>
   <main class="main container">
-    <!------------------------------------ CARD CADASTRO ------------------------------------>
-    <section class="cadastro bg-card">
-      <div class="cadastro-conteudo card-conteudo">
-        <h2>Bem vindo ao FE Choices</h2>
-        <p>Cadastre-se e receba bônus de até 800 pontos</p>
-        <div class="cadastro-btn">
-          <a class="card-btn" href="./cadastro.html">cadastre-se</a>
-          <a href="./cadastro.html"><img src="./imgs/icons/google.svg" alt="google"></a>
-        </div>
-        <p class="breadcrumb">
-          <span>Cadastre-se</span>
-          <span>Palpite</span>
-          <span>Ganhe Pontos</span>
-        </p>
-      </div>
-      <div class="cadastro-img">
-        <img src="./imgs/ilustracoes/bem-vindo.svg" alt="Dois homens com um carro esportivo">
-      </div>
-    </section>
-    <!------------------------------------ CARD PONTOS ------------------------------------>
-    <section class="ganhar-pontos bg-card">
-      <div class="ganhar-pontos-conteudo card-conteudo">
-        <h2>Ganhe mais pontos!</h2>
-        <p>Chame seus amigos através do seu link e ganhe mais pontos</p>
-        <a class="card-btn" href="./afiliados">Saiba Mais</a>
-      </div>
-      <div class="ganhar-pontos-img">
-        <img src="./imgs/ilustracoes/ganhe-pontos.svg" alt="Três pessoas sentadas com café na mão.">
-      </div>
-    </section>
-    <!------------------------------------ CARD PREMIOS ------------------------------------>
-    <section class="resgate-premios bg-card">
-      <div class="resgate-premios-conteudo card-conteudo">
-        <h2>Resgate prêmios!</h2>
-        <p>De seus palpites, ganhe pontos e troque seus pontos por prêmios</p>
-        <a class="card-btn" href="./premios">Veja os prêmios</a>
-      </div>
-      <div class="resgate-premios-img">
-        <img src="./imgs/ilustracoes/resgate-premios.svg" alt="Pessoa em pé do lado de um pacote de presente">
-      </div>
-    </section>
-    <!------------------------------------ CARD PROXIMA CORRIDA ------------------------------------>
-    <section class="proximo-circuito">
-      <h2>Venha conhecer o próximo circuito que será percorrido pela formula e!</h2>
-      <div class="proximo-circuito-conteudo">
+    <!------------------------------------ SECTION LOGIN ------------------------------------>
+    <section class="section-cadastro card-login-cadastro">
+      <form class="card-login-cadastro-conteudo">
+        <h2>Cadastro</h2>
         <div>
-          <img src="./imgs/icons/bandeira-usa.svg" alt="Bandeira dos Estados Unidos da América">
-          <h3>Portland - rodada 13</h3>
+          <label for="usuarioCd">Nome de Usuário</label>
+          <input type="text" name="usuarioCd" id="usuarioCd" placeholder="Seu nome">
         </div>
-        <a class="card-btn" href="./circuitos">Ver Circuito</a>
-      </div>
-    </section>
-    <!------------------------------------ CARD ROLETA ------------------------------------>
-    <section class="giro-gratis bg-card">
-      <img src="./imgs/ilustracoes/giro-1.svg" alt="Pessoa sentada mexendo no celular.">
-      <div class="giro-gratis-conteudo">
-        <h2>Venha coletar seu giro grátis</h2>
         <div>
-          <a class="card-btn" href="">Roleta semanal</a>
-          <a href="">Roleta diária</a>
+          <label for="senhaCd">Senha</label>
+          <input type="password" name="senhaCd" id="senhaCd" placeholder="*******">
         </div>
-      </div>
-      <img src="./imgs/ilustracoes/giro-2.svg" alt="Pessoa em pé mexendo no celular">
-    </section>
-    <!------------------------------ CARD FUNCIONAMENTO PALPITES ------------------------------>
-    <section class="funcionamento">
-      <h2>Como funcionam os Palpites?</h2>
-      <p>Com a FE CHOICES, o usuário tem a oportunidade de testar os seus conhecimentos sobre a Fórmula E, palpitando, de forma totalmente gratuita, apenas usando os nossos <span>(pontos).</span></p>
-      <div class="funcionamento-img">
-        <img src="./imgs/img-funcionamento.jpg" alt="Imagem do fantasy">
-      </div>
-    </section>
-    <!------------------------------ CARD FUNCIONAMENTO FANTASY ------------------------------>
-    <section class="funcionamento">
-      <h2>Como funciona o Fantasy?</h2>
-      <p>Com a FE CHOICES, o usuário tem a oportunidade de criar a sua própria equipe no Fantasy, podendo escolher os seus pilotos, e escolhendo a bandeira de sua equipe, de equipes reais da FE.</p>
-      <div class="funcionamento-img">
-        <img src="./imgs/img-funcionamento.jpg" alt="Imagem do fantasy">
-      </div>
+        <div>
+          <label for="confirmarSenha">Confirmar Senha</label>
+          <input type="password" name="confirmarSenha" id="confirmarSenha" placeholder="*******">
+        </div>
+        <button onclick="validarCadastro()" class="btn-login-cadastro">Entrar</button>
+      </form>
     </section>
   </main>
   <!------------------------------------ FOOTER ------------------------------------>
