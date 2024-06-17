@@ -54,6 +54,43 @@ body {
   margin-right: 40px;
 }
 
+.bg-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(0.25turn, #30455A, #596E84);
+  border-radius: 4px;
+  padding: 40px;
+}
+
+.card-conteudo {
+  h2 {
+    color: var(--cor-w);
+    font: 600 2rem/1.66 var(--fonte-primaria);
+  }
+  p {
+    color: var(--cor-1);
+    font: 400 1.125rem/1.33 var(--fonte-secundaria);
+  }
+}
+
+.card-btn {
+  background: var(--cor-p3);
+  color: var(--cor-w);
+  text-transform: uppercase;
+  padding: 12px 24px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+  font-weight: 500;
+  transition: .3s;
+  border: 2px solid var(--cor-p3);
+}
+
+.card-btn:hover {
+  background: var(--cor-p4);
+  border: 2px solid var(--cor-p4);
+}
+
 /*************************************** HEADER ***************************************/
 
 .header {
@@ -288,4 +325,64 @@ body {
 
 .aside nav:nth-child(3) ul li:nth-child(5) a::before {
   background-image: url(../imgs/icons/icon-blog.svg) ;
+}
+
+/*************************************** MAIN ***************************************/
+
+.main {
+  position: relative;
+  top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding: 20px 0px;
+}
+
+/*************************************** CARD CADASTRO ***************************************/
+
+.cadastro {
+  grid-column: 1 / -1;
+}
+
+.cadastro-conteudo {
+  .cadastro-btn {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.cadastro-btn a:nth-child(2) {
+  border: 2px solid var(--cor-4);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.breadcrumb {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.breadcrumb span {
+  color: var(--cor-1);
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb span:not(:last-child)::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../imgs/icons/seta-direita.svg) no-repeat center center;
+  margin-left: 16px;
+}
+
+.cadastro-img {
+  img {
+    width: 510px;
+  }
 }
