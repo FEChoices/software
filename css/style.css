@@ -386,3 +386,29 @@ body {
     width: 510px;
   }
 }
+
+/*************************************** CARD GANHAR PONTOS ***************************************/
+
+.ganhar-pontos-conteudo {
+  p {
+    max-width: 32ch;
+  }
+  a {
+    margin-top: 20px;
+  }
+}
+
+.ganhar-pontos-img img {
+  width: 220px;
+}
+
+/*************************************** CARD RESGATE PREMIOS ***************************************/
+
+.resgate-premios-conteudo {
+  p {
+    max-width: 32ch;
+  }
+  a {
+    margin-top: 20px;
+  }
+}
