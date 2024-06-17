@@ -1,0 +1,135 @@
+:root {
+  --cor-12: #01080E;
+  --cor-11: #030B14;
+  --cor-10: #081122;
+  --cor-9: #123;
+  --cor-8: #15293D;
+  --cor-7: #22374D;
+  --cor-6: #30455A;
+  --cor-5: #596E84;
+  --cor-4: #7B8EA3;
+  --cor-3: #9AAABB;
+  --cor-2: #C4CED9;
+  --cor-1: #EFF1F3;
+  --cor-w: #fff;
+  --cor-p5: #005;
+  --cor-p4: #159;
+  --cor-p3: #47B;
+  --cor-p2: #69D;
+  --cor-p1: #9CF;
+  --cor-separador: #345;
+  --fonte-primaria: 'Poppins', sans-serif;
+  --fonte-secundaria: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: var(--fonte-secundaria);
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  display: inline-block;
+}
+
+body {
+  background: var(--cor-9);
+}
+
+/*************************************** GLOBAL ***************************************/
+
+.container {
+  box-sizing: border-box;
+  max-width: 1400px;
+  margin-left: 366px;
+  margin-right: 40px;
+}
+
+/*************************************** HEADER ***************************************/
+
+.header {
+  width: 100%;
+  height: 100px;
+  padding: 0px 40px;
+  background: var(--cor-9);
+  border-bottom: 4px solid var(--cor-separador);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 220px;
+  position: fixed;
+  z-index: 2;
+}
+
+.header-logo-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  .menu {
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+  }
+  .logo {
+    width: 66px;
+  }
+}
+
+.header-nav {
+  max-width: 1400px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-pages {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header-pages a {
+  color: var(--cor-w);
+}
+
+.header-pages a:hover {
+  color: var(--cor-2);
+}
+
+.header-login {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header-login a {
+  color: var(--cor-w);
+}
+
+.header-login a:hover {
+  color: var(--cor-2);
+}
+
+.header-login a:nth-child(2) {
+  background: var(--cor-w);
+  border: 1px solid var(--cor-w);
+  color: var(--cor-12);
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-family: var(--fonte-primaria);
+  font-weight: 600;
+  transition: .3s;
+}
+
+.header-login a:nth-child(2):hover {
+  background: var(--cor-9);
+  color: var(--cor-w);
+}
