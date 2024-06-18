@@ -54,46 +54,52 @@
   </aside>
   <!------------------------------------ MAIN ------------------------------------>
   <main class="main container">
-    <!------------------------------------ CARD CADASTRO ------------------------------------>
-    <section class="cadastro bg-card">
-      <div class="cadastro-conteudo card-conteudo">
-        <h2>Bem vindo ao FE Choices</h2>
-        <p>Cadastre-se e receba bônus de até 800 pontos</p>
-        <div class="cadastro-btn">
-          <a class="card-btn" href="./cadastro.html">cadastre-se</a>
-          <a href="./cadastro.html"><img src="./imgs/icons/google.svg" alt="google"></a>
-        </div>
-        <p class="breadcrumb">
-          <span>Cadastre-se</span>
-          <span>Palpite</span>
-          <span>Ganhe Pontos</span>
-        </p>
+    <!------------------------------------ CARD CARROSSEL ------------------------------------>
+    <section class="carrosel">
+      <button id="prev-img"><</button>
+      <div class="container-carrosel">
+          <ul class="container-cards" id="images">
+            <li class="cadastro bg-card item-carrossel">
+              <div class="cadastro-conteudo card-conteudo">
+                <h2>Bem vindo ao FE Choices</h2>
+                <p>Cadastre-se e receba bônus de até 800 pontos</p>
+                <div class="cadastro-btn">
+                  <a class="card-btn" href="./cadastro.html">cadastre-se</a>
+                  <a href="./cadastro.html"><img src="./imgs/icons/google.svg" alt="google"></a>
+                </div>
+                <p class="breadcrumb">
+                  <span>Cadastre-se</span>
+                  <span>Palpite</span>
+                  <span>Ganhe Pontos</span>
+                </p>
+              </div>
+              <div class="cadastro-img">
+                <img src="./imgs/ilustracoes/bem-vindo.svg" alt="Dois homens com um carro esportivo">
+              </div>
+            </li>
+            <li class="ganhar-pontos bg-card item-carrossel">
+              <div class="ganhar-pontos-conteudo card-conteudo">
+                <h2>Ganhe mais pontos!</h2>
+                <p>Chame seus amigos através do seu link e ganhe mais pontos</p>
+                <a class="card-btn" href="./afiliados">Saiba Mais</a>
+              </div>
+              <div class="ganhar-pontos-img">
+                <img src="./imgs/ilustracoes/ganhe-pontos.svg" alt="Três pessoas sentadas com café na mão.">
+              </div>
+            </li>
+            <li class="resgate-premios bg-card item-carrossel">
+              <div class="resgate-premios-conteudo card-conteudo">
+                <h2>Resgate prêmios!</h2>
+                <p>De seus palpites, ganhe pontos e troque seus pontos por prêmios</p>
+                <a class="card-btn" href="./premios">Veja os prêmios</a>
+              </div>
+              <div class="resgate-premios-img">
+                <img src="./imgs/ilustracoes/resgate-premios.svg" alt="Pessoa em pé do lado de um pacote de presente">
+              </div>
+            </li>
+          </ul>
       </div>
-      <div class="cadastro-img">
-        <img src="./imgs/ilustracoes/bem-vindo.svg" alt="Dois homens com um carro esportivo">
-      </div>
-    </section>
-    <!------------------------------------ CARD PONTOS ------------------------------------>
-    <section class="ganhar-pontos bg-card">
-      <div class="ganhar-pontos-conteudo card-conteudo">
-        <h2>Ganhe mais pontos!</h2>
-        <p>Chame seus amigos através do seu link e ganhe mais pontos</p>
-        <a class="card-btn" href="./afiliados">Saiba Mais</a>
-      </div>
-      <div class="ganhar-pontos-img">
-        <img src="./imgs/ilustracoes/ganhe-pontos.svg" alt="Três pessoas sentadas com café na mão.">
-      </div>
-    </section>
-    <!------------------------------------ CARD PREMIOS ------------------------------------>
-    <section class="resgate-premios bg-card">
-      <div class="resgate-premios-conteudo card-conteudo">
-        <h2>Resgate prêmios!</h2>
-        <p>De seus palpites, ganhe pontos e troque seus pontos por prêmios</p>
-        <a class="card-btn" href="./premios">Veja os prêmios</a>
-      </div>
-      <div class="resgate-premios-img">
-        <img src="./imgs/ilustracoes/resgate-premios.svg" alt="Pessoa em pé do lado de um pacote de presente">
-      </div>
+      <button id="next-img">></button>
     </section>
     <!------------------------------------ CARD PROXIMA CORRIDA ------------------------------------>
     <section class="proximo-circuito">
