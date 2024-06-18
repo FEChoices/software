@@ -13,7 +13,7 @@ Este projeto tem o intúito de aumentar a visibilidade da Fórmula E, atraindo p
 
 ## 🚀 Descrição do Projeto
 
-O software guarda o usuario e a quantidade de pontos que ele tem e da a possibilidade de aumentar ou diminuir seus pontos:
+O software guarda o usuario e a quantidade de pontos que ele tem e da a possibilidade de aumentar ou diminuir seus pontos.
 
 ## ⚙️ Instruções de Uso
 
